@@ -2,9 +2,17 @@
 
 #include "plugin.hpp"
 
-Plugin* pluginInstance;
+#if defined(METAMODULE_BUILTIN)
+extern Plugin *pluginInstance;
+#else
+Plugin *pluginInstance;
+#endif
 
-void init(Plugin* p) {
+#if defined(METAMODULE_BUILTIN)
+void init_MockbaModular(rack::Plugin *p) {
+#else 
+void init(rack::Plugin *p) {
+#endif
 	pluginInstance = p;
 
 	// Add modules here

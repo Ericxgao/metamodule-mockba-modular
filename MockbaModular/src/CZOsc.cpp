@@ -124,10 +124,7 @@ void CZOsc::process(const ProcessArgs& args) {
 struct CZOscWidget : ModuleWidget {
 	CZOscWidget(CZOsc* module) {
 		setModule(module);
-		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, BGCOLOR)));
-		SvgWidget* panel = createWidget<SvgWidget>(Vec(0, 0));
-		panel->setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/CZOsc.svg")));
-		addChild(panel);
+		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/CZOsc.svg")));
 
 		// Screws
 		addChild(createWidget<_Screw>(Vec(0, 0)));

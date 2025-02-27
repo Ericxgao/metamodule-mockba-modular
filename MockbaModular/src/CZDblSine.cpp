@@ -86,10 +86,7 @@ void CZDblSine::process(const ProcessArgs& args) {
 struct CZDblSineWidget : ModuleWidget {
 	CZDblSineWidget(CZDblSine* module) {
 		setModule(module);
-		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, BGCOLOR)));
-		SvgWidget* panel = createWidget<SvgWidget>(Vec(0, 0));
-		panel->setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/CZDblSine.svg")));
-		addChild(panel);
+		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/CZDblSine.svg")));
 
 		// Screws
 		addChild(createWidget<_Screw>(Vec(0, 0)));

@@ -75,10 +75,8 @@ void MaugSquare2::process(const ProcessArgs& args) {
 struct MaugSquare2Widget : ModuleWidget {
 	MaugSquare2Widget(MaugSquare2* module) {
 		setModule(module);
-		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, BGCOLOR)));
-		SvgWidget* panel = createWidget<SvgWidget>(Vec(0, 0));
-		panel->setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/MaugSquare2.svg")));
-		addChild(panel);
+		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/MaugSquare2.svg")));
+
 
 		// Screws
 		addChild(createWidget<_Screw>(Vec(0, 0)));

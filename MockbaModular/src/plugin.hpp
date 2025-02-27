@@ -16,6 +16,7 @@ struct _Screw : SvgScrew {
 
 struct _Knob : RoundKnob {
 	_Knob() {
+		box.size = Vec(16, 16);
 		setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/knob.svg")));
 		minAngle = -0.68 * M_PI;
 		maxAngle = 0.68 * M_PI;
@@ -49,6 +50,12 @@ struct _Hsw3 : SvgSwitch {
 struct _Port : SvgPort {
 	_Port() {
 		setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/port.svg")));
+	}
+};
+
+struct Panel : SvgWidget {
+	Panel() {
+		setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/CZOsc.svg")));
 	}
 };
 

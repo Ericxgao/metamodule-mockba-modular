@@ -72,10 +72,8 @@ void Feidah::process(const ProcessArgs& args) {
 struct FeidahWidget : ModuleWidget {
 	FeidahWidget(Feidah* module) {
 		setModule(module);
-		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, BGCOLOR)));
-		SvgWidget* panel = createWidget<SvgWidget>(Vec(0, 0));
-		panel->setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/Feidah.svg")));
-		addChild(panel);
+		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/Feidah.svg")));
+
 
 		// Screws
 		addChild(createWidget<_Screw>(Vec(0, 0)));

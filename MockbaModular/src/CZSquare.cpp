@@ -92,10 +92,8 @@ void CZSquare::process(const ProcessArgs& args) {
 struct CZSquareWidget : ModuleWidget {
 	CZSquareWidget(CZSquare* module) {
 		setModule(module);
-		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, BGCOLOR)));
-		SvgWidget* panel = createWidget<SvgWidget>(Vec(0, 0));
-		panel->setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/CZSquare.svg")));
-		addChild(panel);
+		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/CZSquare.svg")));
+
 
 		// Screws
 		addChild(createWidget<_Screw>(Vec(0, 0)));

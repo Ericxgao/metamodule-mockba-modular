@@ -113,10 +113,7 @@ void CZReso1::process(const ProcessArgs& args) {
 struct CZReso1Widget : ModuleWidget {
 	CZReso1Widget(CZReso1* module) {
 		setModule(module);
-		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, BGCOLOR)));
-		SvgWidget* panel = createWidget<SvgWidget>(Vec(0, 0));
-		panel->setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/CZReso1.svg")));
-		addChild(panel);
+		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/CZReso1.svg")));
 
 		// Screws
 		addChild(createWidget<_Screw>(Vec(0, 0)));

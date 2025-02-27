@@ -90,10 +90,8 @@ void Mixah3::process(const ProcessArgs& args) {
 struct Mixah3Widget : ModuleWidget {
 	Mixah3Widget(Mixah3* module) {
 		setModule(module);
-		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, BGCOLOR)));
-		SvgWidget* panel = createWidget<SvgWidget>(Vec(0, 0));
-		panel->setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/Mixah3.svg")));
-		addChild(panel);
+		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/Mixah3.svg")));
+
 
 		// Screws
 		addChild(createWidget<_Screw>(Vec(0, 0)));

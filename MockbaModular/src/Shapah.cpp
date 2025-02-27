@@ -101,10 +101,7 @@ void Shapah::process(const ProcessArgs& args) {
 struct ShapahWidget : ModuleWidget {
 	ShapahWidget(Shapah* module) {
 		setModule(module);
-		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, BGCOLOR)));
-		SvgWidget* panel = createWidget<SvgWidget>(Vec(0, 0));
-		panel->setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/Shapah.svg")));
-		addChild(panel);
+		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/Shapah.svg")));
 
 		// Screws
 		addChild(createWidget<_Screw>(Vec(0, 0)));

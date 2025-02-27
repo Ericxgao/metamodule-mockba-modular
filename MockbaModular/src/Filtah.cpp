@@ -73,10 +73,8 @@ void Filtah::process(const ProcessArgs& args) {
 struct FiltahWidget : ModuleWidget {
 	FiltahWidget(Filtah* module) {
 		setModule(module);
-		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, BGCOLOR)));
-		SvgWidget* panel = createWidget<SvgWidget>(Vec(0, 0));
-		panel->setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/Filtah.svg")));
-		addChild(panel);
+		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/Filtah.svg")));
+
 
 		// Screws
 		addChild(createWidget<_Screw>(Vec(0, 0)));

@@ -83,10 +83,7 @@ void Dividah::process(const ProcessArgs& args) {
 struct DividahWidget : ModuleWidget {
 	DividahWidget(Dividah* module) {
 		setModule(module);
-		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, BGCOLOR)));
-		SvgWidget* panel = createWidget<SvgWidget>(Vec(0, 0));
-		panel->setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/Dividah.svg")));
-		addChild(panel);
+		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/Dividah.svg")));
 
 		// Screws
 		addChild(createWidget<_Screw>(Vec(0, 0)));

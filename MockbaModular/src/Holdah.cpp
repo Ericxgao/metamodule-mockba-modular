@@ -69,10 +69,7 @@ void Holdah::process(const ProcessArgs& args) {
 struct HoldahWidget : ModuleWidget {
 	HoldahWidget(Holdah* module) {
 		setModule(module);
-		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, BGCOLOR)));
-		SvgWidget* panel = createWidget<SvgWidget>(Vec(0, 0));
-		panel->setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/Holdah.svg")));
-		addChild(panel);
+		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/Holdah.svg")));
 
 		// Screws
 		addChild(createWidget<_Screw>(Vec(0, 0)));

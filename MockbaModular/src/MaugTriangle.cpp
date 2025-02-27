@@ -75,10 +75,8 @@ void MaugTriangle::process(const ProcessArgs& args) {
 struct MaugTriangleWidget : ModuleWidget {
 	MaugTriangleWidget(MaugTriangle* module) {
 		setModule(module);
-		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, BGCOLOR)));
-		SvgWidget* panel = createWidget<SvgWidget>(Vec(0, 0));
-		panel->setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/MaugTriangle.svg")));
-		addChild(panel);
+		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/MaugTriangle.svg")));
+
 
 		// Screws
 		addChild(createWidget<_Screw>(Vec(0, 0)));

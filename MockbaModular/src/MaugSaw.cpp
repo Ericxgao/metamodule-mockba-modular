@@ -75,10 +75,7 @@ void MaugSaw::process(const ProcessArgs& args) {
 struct MaugSawWidget : ModuleWidget {
 	MaugSawWidget(MaugSaw* module) {
 		setModule(module);
-		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, BGCOLOR)));
-		SvgWidget* panel = createWidget<SvgWidget>(Vec(0, 0));
-		panel->setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/MaugSaw.svg")));
-		addChild(panel);
+		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/MaugSaw.svg")));
 
 		// Screws
 		addChild(createWidget<_Screw>(Vec(0, 0)));
