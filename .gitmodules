@@ -1,0 +1,3 @@
+[submodule "MockbaModular"]
+	path = MockbaModular
+	url = https://github.com/MockbaTheBorg/MockbaModular.git
