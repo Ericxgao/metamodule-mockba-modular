@@ -1,7 +1,168 @@
 {
-    "MetaModulePluginMaintainer": "Eric Gao",
-    "MetaModulePluginMaintainerEmail": "",
-    "MetaModulePluginMaintainerUrl": "",
-    "MetaModuleDescription": "",
-    "MetaModuleIncludedModules": []
+    "MetaModulePluginMaintainer": "oksami",
+    "MetaModulePluginMaintainerEmail": "itsoksami@gmail.com",
+    "MetaModulePluginMaintainerUrl": "https://github.com/oksami/metamodule-mockba",
+    "MetaModuleDescription": "Mockba modules ported for MetaModule",
+    "MetaModuleIncludedModules": [
+        {
+            "slug": "Blank",
+            "name": "Blank"
+        },
+        {
+            "slug": "Feidah",
+            "name": "Feidah"
+        },
+        {
+            "slug": "FeidahS",
+            "name": "FeidahS"
+        },
+        {
+            "slug": "Filtah",
+            "name": "Filtah"
+        },
+        {
+            "slug": "Mixah",
+            "name": "Mixah"
+        },
+        {
+            "slug": "Mixah3",
+            "name": "Mixah3"
+        },
+        {
+            "slug": "Dividah",
+            "name": "Dividah"
+        },
+        {
+            "slug": "Countah",
+            "name": "Countah"
+        },
+        {
+            "slug": "Selectah",
+            "name": "Selectah"
+        },
+        {
+            "slug": "Shapah",
+            "name": "Shapah"
+        },
+        {
+            "slug": "Holdah",
+            "name": "Holdah"
+        },
+        {
+            "slug": "Pannah",
+            "name": "Pannah"
+        },
+        {
+            "slug": "ReVoltah",
+            "name": "ReVoltah"
+        },
+        {
+            "slug": "CZSaw",
+            "name": "CZSaw"
+        },
+        {
+            "slug": "CZSquare",
+            "name": "CZSquare"
+        },
+        {
+            "slug": "CZPulse",
+            "name": "CZPulse"
+        },
+        {
+            "slug": "CZDblSine",
+            "name": "CZDblSine"
+        },
+        {
+            "slug": "CZSawPulse",
+            "name": "CZSawPulse"
+        },
+        {
+            "slug": "CZReso1",
+            "name": "CZReso1"
+        },
+        {
+            "slug": "CZReso2",
+            "name": "CZReso2"
+        },
+        {
+            "slug": "CZReso3",
+            "name": "CZReso3"
+        },
+        {
+            "slug": "CZOsc",
+            "name": "CZOsc"
+        },
+        {
+            "slug": "MaugTriangle",
+            "name": "MaugTriangle"
+        },
+        {
+            "slug": "MaugShark",
+            "name": "MaugShark"
+        },
+        {
+            "slug": "MaugSaw",
+            "name": "MaugSaw"
+        },
+        {
+            "slug": "MaugSaw2",
+            "name": "MaugSaw2"
+        },
+        {
+            "slug": "MaugSquare",
+            "name": "MaugSquare"
+        },
+        {
+            "slug": "MaugSquare2",
+            "name": "MaugSquare2"
+        },
+        {
+            "slug": "MaugSquare3",
+            "name": "MaugSquare3"
+        },
+        {
+            "slug": "MaugOsc",
+            "name": "MaugOsc"
+        },
+        {
+            "slug": "Comparator",
+            "name": "Comparator"
+        },
+        {
+            "slug": "DualBUFFER",
+            "name": "DualBUFFER"
+        },
+        {
+            "slug": "DualNOT",
+            "name": "DualNOT"
+        },
+        {
+            "slug": "DualOR",
+            "name": "DualOR"
+        },
+        {
+            "slug": "DualNOR",
+            "name": "DualNOR"
+        },
+        {
+            "slug": "DualAND",
+            "name": "DualAND"
+        },
+        {
+            "slug": "DualNAND",
+            "name": "DualNAND"
+        },
+        {
+            "slug": "DualXOR",
+            "name": "DualXOR"
+        },
+        {
+            "slug": "DualXNOR",
+            "name": "DualXNOR"
+        },
+        {
+            "slug": "PSelectah",
+            "name": "PSelectah"
+        },
+    ]
 }
